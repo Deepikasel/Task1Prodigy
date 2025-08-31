@@ -1,61 +1,44 @@
-Prodigy Internship – Task 01: REST API with CRUD Operations
+🚀 Prodigy Internship – Task 01: REST API with CRUD Operations
+💡 Project Overview
 
-Overview
-This project is part of my Prodigy Internship. It demonstrates a RESTful API for managing a users resource using Node.js and Express.js.
+As part of my ProDigy Internship, I developed a RESTful API for managing a users resource using Node.js and Express.js. This project focuses on backend fundamentals, clean design, and proper data handling.
 
-Each user has the following fields:
-id (UUID)
-name
-email
-age
-The API uses in-memory storage with a JavaScript Map() object, along with input validation and proper status code handling.
+Each user includes the following properties:
 
-Features
-CRUD Operations:
-Create: Add new users
-Read: Retrieve all users or a single user by ID
-Update: Modify user details
-Delete: Remove a user
+id: Unique UUID
 
-Validation:
-Email validation using the validator library
-Age validation (must be a positive number)
+name: User’s full name
 
-Error Handling:
-400 – Bad request (invalid input)
-404 – User not found
-201 – Resource created successfully
+email: User’s email (validated)
 
-Clean Express.js routing for maintainable code
+age: Positive integer
 
-Endpoints
+The API uses an in-memory storage (Map()) for fast, simple data management and includes robust input validation and error handling.
+
+✨ Key Features
+
+✅ Full CRUD functionality (Create, Read, Update, Delete)
+
+✅ Input validation: Email format & positive age numbers
+
+✅ Proper HTTP status codes: 201, 400, 404
+
+✅ Clean, modular Express.js routing
+
+✅ In-memory storage with Map() for simplicity & speed
+
+🛠 Endpoints Overview
 Method	Endpoint	Description
 POST	/users	Create a new user
-GET	/users	Retrieve all users
-GET	/users/:id	Retrieve a user by ID
-PUT	/users/:id	Update a user's details
+GET	/users	Get all users
+GET	/users/:id	Get user by ID
+PUT	/users/:id	Update user details
 DELETE	/users/:id	Delete a user
-GET	/	Welcome page
-Installation
+GET	/	Welcome message
+⚡ Example Requests
 
-Clone the repository:
-git clone <your-repo-url>
+Create a new user
 
-Navigate to the project directory:
-cd Task1Prodigy
-
-Install dependencies:
-npm install
-
-Start the server:
-node server.js
-
-The API will run on:
-http://localhost:3000
-
-Usage Example
-
-Create a user:
 POST /users
 {
   "name": "Deepika",
@@ -63,14 +46,14 @@ POST /users
   "age": 22
 }
 
-Retrieve all users:
+
+Get all users
+
 GET /users
 
 
-Retrieve a single user by ID:
-GET /users/:id
+Update a user
 
-Update a user:
 PUT /users/:id
 {
   "name": "Deepika S",
@@ -78,17 +61,33 @@ PUT /users/:id
   "age": 23
 }
 
-Delete a user:
+
+Delete a user
+
 DELETE /users/:id
 
-Technologies Used
-Node.js
-Express.js
+🛠 Technologies & Tools
 
-UUID for unique user IDs
-Validator for email validation
-JavaScript Map() for in-memory storage
+Node.js – Server-side JavaScript runtime
 
-Author
+Express.js – Minimalist web framework for APIs
+
+UUID – Unique identifier for users
+
+Validator.js – Email validation
+
+Map() – In-memory storage for fast operations
+
+🚀 Skills & Learnings
+
+REST API design & implementation
+
+Input validation & proper error handling
+
+HTTP status code best practices
+
+Modular and maintainable Express.js architecture
+
+👩‍💻 Author
+
 Deepika S. – Prodigy Internship Participant
-
